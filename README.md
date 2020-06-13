@@ -1,4 +1,4 @@
-# demo_Django
+## Overview
 this is demo of Django with  live face mask detection.
 
 here you can find all the files need to run Django project.
