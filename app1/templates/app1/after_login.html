@@ -1,0 +1,34 @@
+{% extends "app1/base_afterlogin.html" %}
+
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+
+    </ul>
+    <div class="container">
+      {% block body_block %}
+
+
+    <div style="margin-left:25%; margin-right:25%; margin-top:3%; background-color: #ffffff; border: 2px solid black; opacity: 0.6; filter: alpha(opacity=60); border-radius:50px; "></br>
+      <div class="jumbotron">
+        <!-- from views.py containing AHome function is used to call this page. -->
+        <!-- csrf_token is a kind of bot-catcher. -->
+          {% csrf_token %}
+          <h3>Hi, you can perform following tasks at present!</h3>
+          <h4>press 'q' to end preocess </h4>
+        </br></br><a href="{% url 'After_Mask' %}"><button type="button" class="btn btn-success">Face Mask detection</button></a> &nbsp &nbsp &nbsp &nbsp
+      </div>
+      </div>
+     {% endblock %}
+
+    </div>
+
+
+  </body>
+</html>

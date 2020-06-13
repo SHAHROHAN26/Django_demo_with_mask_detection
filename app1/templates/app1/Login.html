@@ -1,0 +1,29 @@
+{% extends "app1/base.html" %}
+
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <div class="container">
+        < /br>< /br>< /br>
+          {% block body_block %}
+    <div style="margin-left:25%; margin-right:25%; margin-top:2%; background-color: #ffffff; border: 2px solid black; opacity: 0.6; filter: alpha(opacity=60); border-radius:50px; "></br>
+      <h1 style="font-family:Consolas;"><u>LOGIN</u></h1>
+      <form method="POST" action="" style=" font-weight: bold; color: #000000;">
+        <!-- form1 is refrenced from views.py containing user_login function. as_p is used to represent form as paragraph  -->
+        <!-- csrf_token is a kind of bot-catcher. -->
+        {% csrf_token %}
+        {{ form3.as_p }}
+
+        <input type="submit" name="" class="btn btn-primary btn-lg" style="border-radius:30px" value="Login" /></br></br>
+      </form>
+    </div>
+    {% endblock %}
+    </div>
+
+
+  </body>
+</html>

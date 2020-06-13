@@ -1,0 +1,29 @@
+{% extends "app1/base_afterlogin.html" %}
+
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+
+    </ul>
+    <div class="container">
+      {% block body_block %}
+
+
+    <div style="margin-left:25%; margin-right:25%; margin-top:3%; background-color: #ffffff; border: 2px solid black; opacity: 0.6; filter: alpha(opacity=60); border-radius:50px; "></br>
+
+          {% csrf_token %}
+          <h3>Live Face Mask Detection perform successfully</h3>
+            </div>
+     {% endblock %}
+
+    </div>
+
+
+  </body>
+</html>
